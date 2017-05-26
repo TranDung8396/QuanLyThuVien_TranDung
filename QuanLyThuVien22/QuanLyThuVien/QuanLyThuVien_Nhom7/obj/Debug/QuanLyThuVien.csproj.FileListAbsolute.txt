@@ -58,3 +58,6 @@ E:\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nho
 C:\Users\Tran_Dung\Downloads\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\bin\Debug\QuanLyThuVien_Nhom7.exe.config
 C:\Users\Tran_Dung\Downloads\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.exe
 C:\Users\Tran_Dung\Downloads\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.pdb
+C:\Users\Phong_Tung\Documents\GitHub\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\bin\Debug\QuanLyThuVien_Nhom7.exe.config
+C:\Users\Phong_Tung\Documents\GitHub\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.exe
+C:\Users\Phong_Tung\Documents\GitHub\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.pdb
