@@ -117,4 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="rtbHelp.Text" xml:space="preserve">
+    <value>Hướng dẫn:
+
+1, Đăng nhập:
+- Nhập tài khoản và mật khẩu
+- Đăng nhập và sử dụng theo nhu cầu
+---------------------
+
+
+2, Chức năng "Đầu Sách" :
+- Thêm: Bổ sung một đầu sách vào trong cơ sở dữ liệu
++Nhập tất cả các thông tin cần thiết của đầu sách vào, đảm bảo đúng và đủ
++Nhấn Lưu thêm mới nếu muốn lưu thông tin
++Nhấn Hủy nếu muốn hủy bỏ thao tác
+
+- Sửa: Sửa thông tin của một đầu sách
++Nhấn vào đầu sách cần sửa
++Chọn nút Sửa
++Thực hiện sửa các thông tin của đầu sách đó
++Nhấn Cập nhật để lưu thông tin vừa sửa hoặc Hủy nếu muốn hủy bỏ sửa chữa
+
+- Xóa: Xóa thông tin của một đầu sách (khi đầu sách đang cho mượn không thể xóa được)
++Nhấn vào đầu sách muốn xóa thông tin
++Chọn nút Xóa để thực hiện xóa đầu sách đó khỏi cơ sở dữ liệu
+
+- Tìm kiếm: Tìm kiếm thông tin của một(nhiểu) đầu sách theo Tên hoặc Mã 
++Nhập từ khóa cần tìm kiếm vào ô trống Tìm Kiếm, phần mềm sẽ tự động đưa ra những kết quả phù hợp
+
+- Thoát: Thoát trở lại màn hình chính của phần mềm
+---------------------
+
+
+3, Chức năng "Độc Gỉa" :
+- Thêm: Bổ sung một độc giả vào trong cơ sở dữ liệu
++Nhập tất cả các thông tin cần thiết của độc giả vào, đảm bảo đúng và đủ
++Nhấn Lưu thêm mới nếu muốn lưu thông tin
++Nhấn Hủy nếu muốn hủy bỏ thao tác
+
+- Sửa: Sửa thông tin của một độc giả
++Nhấn vào độc giả cần sửa
++Chọn nút Sửa
++Thực hiện sửa các thông tin của độc giả đó
++Nhấn Cập nhật để lưu thông tin vừa sửa hoặc Hủy nếu muốn hủy bỏ sửa chữa
+
+- Xóa: Xóa thông tin của một độc giả (khi độc giả đang cho mượn không thể xóa được)
++Nhấn vào độc giả muốn xóa thông tin
++Chọn nút Xóa để thực hiện xóa độc giả đó khỏi cơ sở dữ liệu
+
+- Tìm kiếm: Tìm kiếm thông tin của một(nhiểu) độc giả theo Tên hoặc Mã
++Nhập từ khóa cần tìm kiếm vào ô trống Tìm Kiếm, phần mềm sẽ tự động đưa ra những kết quả phù hợp
+
+- Thoát: Thoát trở lại màn hình chính của phần mềm
+---------------------
+4, Chức năng "Mượn Trả Sách"
+- Chọn sách muốn mượn thêm vào bảng mượn sách và bảng thông tin
+- Chọn sách muốn trả thêm vào bảng trả sách và bảng thông tin
+- Thoát: Thoát trở lại màn hình chính của phần mềm
+5, Trợ giúp
+- Nhấn phím "Help" trên thanh công cụ hoặc nhấn "F1" để chuyển vào giao diện Trợ giúp</value>
+  </data>
 </root>
