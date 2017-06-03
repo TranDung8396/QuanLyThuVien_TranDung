@@ -51,41 +51,43 @@ namespace QuanLyThuVien_Nhom7
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
-            connect();
-            if (txtSoLuongBoSung.Text.Trim() == "")
             {
-                MessageBox.Show("Chưa nhập gì");
-                return;
-            }
-            try
-            {
-                if (int.Parse(txtSoLuongBoSung.Text) > 0)
+                connect();
+                if (txtSoLuongBoSung.Text.Trim() == "")
                 {
-                    SqlCommand command = new SqlCommand("sp_BOSUNGDAUSACH", conn);
-                    command.CommandType = CommandType.StoredProcedure;
-
-                    command.Parameters.Add(new SqlParameter("@ma", int.Parse(txtMa.Text)));
-                    command.Parameters.Add(new SqlParameter("@soluong", int.Parse(txtSoLuongBoSung.Text)));
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Thêm thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    FormDauSach f = new FormDauSach();
-                    f.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Số lượng không hợp lệ. Mời nhập lại !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Chưa nhập gì");
                     return;
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("đéo đúng kiểu dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+                try
+                {
+                    if (int.Parse(txtSoLuongBoSung.Text) > 0)
+                    {
+                        SqlCommand command = new SqlCommand("sp_BOSUNGDAUSACH", conn);
+                        command.CommandType = CommandType.StoredProcedure;
 
-            disconect();
+                        command.Parameters.Add(new SqlParameter("@ma", int.Parse(txtMa.Text)));
+                        command.Parameters.Add(new SqlParameter("@soluong", int.Parse(txtSoLuongBoSung.Text)));
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Thêm thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FormDauSach f = new FormDauSach();
+                        f.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Số lượng không hợp lệ. Mời nhập lại !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("đéo đúng kiểu dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                disconect();
+
+            }
 
         }
 
