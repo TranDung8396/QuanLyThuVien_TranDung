@@ -47,12 +47,12 @@ namespace QuanLyThuVien_Nhom7
             DataTable data3 = new DataTable();
             cm.Connection = con;
 
-            cm.CommandText = "select * from LOAISACH";
-            da.SelectCommand = cm;
-            da.Fill(data);
-            cbbMaLoaiSach.DataSource = data;
-            cbbMaLoaiSach.DisplayMember = "Ten";
-            cbbMaLoaiSach.ValueMember = "Ma";
+            //cm.CommandText = "select * from LOAISACH";
+            //da.SelectCommand = cm;
+            //da.Fill(data);
+            //cbbMaLoaiSach.DataSource = data;
+            //cbbMaLoaiSach.DisplayMember = "Ten";
+            //cbbMaLoaiSach.ValueMember = "Ma";
 
             cm.CommandText = "select * from TACGIA";
             da.SelectCommand = cm;
@@ -93,7 +93,7 @@ namespace QuanLyThuVien_Nhom7
         private void btnLuu_Click(object sender, EventArgs e)
         {
             connect();
-            if (txtGia.Text == "" || txtMaHienThi.Text == "" || txtNamXuatBan.Text == "" || txtSoLuongLyThuyet.Text == "" || txtSoTrang.Text == "" || txtTen.Text == "")
+            if (txtGia.Text == "" || txtMaHienThi.Text == "" || txtNamXuatBan.Text == "" || txtSoLuong.Text == "" || txtSoTrang.Text == "" || txtTen.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập đủ dữ liệu !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -106,11 +106,11 @@ namespace QuanLyThuVien_Nhom7
 
                     command.Parameters.Add(new SqlParameter("@mahienthi", txtMaHienThi.Text));
                     command.Parameters.Add(new SqlParameter("@ten", txtTen.Text));
-                    command.Parameters.Add(new SqlParameter("@soluong", int.Parse(txtSoLuongLyThuyet.Text)));
+                    command.Parameters.Add(new SqlParameter("@soluong", int.Parse(txtSoLuong.Text)));
                     command.Parameters.Add(new SqlParameter("@sotrang", int.Parse(txtSoTrang.Text)));
                     command.Parameters.Add(new SqlParameter("@gia", decimal.Parse(txtGia.Text)));
                     command.Parameters.Add(new SqlParameter("@namxb", int.Parse(txtNamXuatBan.Text)));
-                    command.Parameters.Add(new SqlParameter("@maloaisach", cbbMaLoaiSach.SelectedValue));
+                    //command.Parameters.Add(new SqlParameter("@maloaisach", cbbMaLoaiSach.SelectedValue));
                     command.Parameters.Add(new SqlParameter("@matg", cbbMaTacGia.SelectedValue));
                     command.Parameters.Add(new SqlParameter("@manxb", cbbMaNXB.SelectedValue));
                     command.Parameters.Add(new SqlParameter("@mavt", cbbMaViTri.SelectedValue));
@@ -122,7 +122,7 @@ namespace QuanLyThuVien_Nhom7
                         txtMaHienThi.Clear();
                         txtGia.Clear();
                         txtNamXuatBan.Clear();
-                        txtSoLuongLyThuyet.Clear();
+                        txtSoLuong.Clear();
                         txtSoTrang.Clear();
                         txtTen.Clear();
                         return;
@@ -147,7 +147,7 @@ namespace QuanLyThuVien_Nhom7
             txtMaHienThi.Clear();
             txtGia.Clear();
             txtNamXuatBan.Clear();
-            txtSoLuongLyThuyet.Clear();
+            txtSoLuong.Clear();
             txtSoTrang.Clear();
             txtTen.Clear();
         }

@@ -61,6 +61,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbbMaViTri = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauSach)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -82,7 +84,7 @@
             // 
             this.cbbMaNXB.Enabled = false;
             this.cbbMaNXB.FormattingEnabled = true;
-            this.cbbMaNXB.Location = new System.Drawing.Point(553, 184);
+            this.cbbMaNXB.Location = new System.Drawing.Point(552, 166);
             this.cbbMaNXB.Name = "cbbMaNXB";
             this.cbbMaNXB.Size = new System.Drawing.Size(322, 21);
             this.cbbMaNXB.TabIndex = 22;
@@ -252,6 +254,7 @@
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(322, 20);
             this.txtSoLuong.TabIndex = 16;
+            this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged);
             // 
             // txtMaHienThi
             // 
@@ -271,6 +274,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbbMaViTri);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.cbbMaNXB);
             this.groupBox1.Controls.Add(this.cbbMaTacGia);
             this.groupBox1.Controls.Add(this.txtNamXuatBan);
@@ -294,6 +299,7 @@
             this.groupBox1.Size = new System.Drawing.Size(882, 256);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtTen
             // 
@@ -327,7 +333,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(470, 187);
+            this.label12.Location = new System.Drawing.Point(469, 169);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 15);
             this.label12.TabIndex = 11;
@@ -404,6 +410,26 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Cuốn Sách";
             // 
+            // cbbMaViTri
+            // 
+            this.cbbMaViTri.Enabled = false;
+            this.cbbMaViTri.FormattingEnabled = true;
+            this.cbbMaViTri.Location = new System.Drawing.Point(554, 211);
+            this.cbbMaViTri.Name = "cbbMaViTri";
+            this.cbbMaViTri.Size = new System.Drawing.Size(322, 21);
+            this.cbbMaViTri.TabIndex = 24;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(487, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 15);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Vị trí";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
             // FormDauSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -464,5 +490,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbbMaViTri;
+        private System.Windows.Forms.Label label5;
     }
 }

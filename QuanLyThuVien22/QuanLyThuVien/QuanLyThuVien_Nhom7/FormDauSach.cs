@@ -47,7 +47,7 @@ namespace QuanLyThuVien_Nhom7
             command.CommandText = "sp_TIMKIEMDAUSACH";
             command.Parameters.Add(new SqlParameter("@mahienthi", txtTimKiem.Text));
             command.Parameters.Add(new SqlParameter("@ten", txtTimKiem.Text));
-            command.Parameters.Add(new SqlParameter("@theloai", txtTimKiem.Text));
+           // command.Parameters.Add(new SqlParameter("@theloai", txtTimKiem.Text));
             command.Parameters.Add(new SqlParameter("@tacgia", txtTimKiem.Text));
             command.Parameters.Add(new SqlParameter("@nxb", txtTimKiem.Text));
             da.SelectCommand = command;
@@ -103,10 +103,10 @@ namespace QuanLyThuVien_Nhom7
             cl.DataPropertyName = "nxb";
             cl.HeaderText = "Nhà xuất bản";
             dgv.Columns.Add(cl);
-            //cl = new DataGridViewTextBoxColumn();
-            //cl.DataPropertyName = "vitri";
-            //cl.HeaderText = "Vị trí";
-            //dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "vitri";
+            cl.HeaderText = "Vị trí";
+            dgv.Columns.Add(cl);
 
 
 
@@ -139,7 +139,7 @@ namespace QuanLyThuVien_Nhom7
             txtSoLuong.DataBindings.Clear();
             //txtSoLuongLyThuyet.DataBindings.Add("Text", dgvDauSach.DataSource, "SoLuongLyThuyet");
             //txtSoLuongThucTe.DataBindings.Clear();
-            txtSoLuong.DataBindings.Add("Text", dgvDauSach.DataSource, "SoLuongThucTe");
+            txtSoLuong.DataBindings.Add("Text", dgvDauSach.DataSource, "SoLuong");
             txtSoTrang.DataBindings.Clear();
             txtSoTrang.DataBindings.Add("Text", dgvDauSach.DataSource, "SoTrang");
             txtGia.DataBindings.Clear();
@@ -152,8 +152,8 @@ namespace QuanLyThuVien_Nhom7
             cbbMaTacGia.DataBindings.Add("Text", dgvDauSach.DataSource, "TacGia");
             cbbMaNXB.DataBindings.Clear();
             cbbMaNXB.DataBindings.Add("Text", dgvDauSach.DataSource, "nxb");
-            //cbbMaViTri.DataBindings.Clear();
-            //cbbMaViTri.DataBindings.Add("Text", dgvDauSach.DataSource, "vitri");
+            cbbMaViTri.DataBindings.Clear();
+            cbbMaViTri.DataBindings.Add("Text", dgvDauSach.DataSource, "vitri");
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -171,8 +171,9 @@ namespace QuanLyThuVien_Nhom7
             //cbbMaLoaiSach.Enabled = true;
             cbbMaNXB.Enabled = true;
             cbbMaTacGia.Enabled = true;
-            //cbbMaViTri.Enabled = true;
+            cbbMaViTri.Enabled = true;
             dgvDauSach.Enabled = false;
+            txtSoLuong.Enabled = true;
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -187,12 +188,13 @@ namespace QuanLyThuVien_Nhom7
                 command.Parameters.Add(new SqlParameter("@mahienthi", txtMaHienThi.Text));
                 command.Parameters.Add(new SqlParameter("@ten", txtTen.Text));
                 command.Parameters.Add(new SqlParameter("@sotrang", int.Parse(txtSoTrang.Text)));
+                command.Parameters.Add(new SqlParameter("@soluong", int.Parse(txtSoLuong.Text)));
                 command.Parameters.Add(new SqlParameter("@gia", decimal.Parse(txtGia.Text)));
                 command.Parameters.Add(new SqlParameter("@namxb", int.Parse(txtNamXuatBan.Text)));
                 //command.Parameters.Add(new SqlParameter("@maloaisach", int.Parse(cbbMaLoaiSach.SelectedValue.ToString())));
                 command.Parameters.Add(new SqlParameter("@matg", int.Parse(cbbMaTacGia.SelectedValue.ToString())));
                 command.Parameters.Add(new SqlParameter("@manxb", int.Parse(cbbMaNXB.SelectedValue.ToString())));
-                //command.Parameters.Add(new SqlParameter("@mavt", int.Parse(cbbMaViTri.SelectedValue.ToString())));
+                command.Parameters.Add(new SqlParameter("@mavt", int.Parse(cbbMaViTri.SelectedValue.ToString())));
 
                 command.ExecuteNonQuery();
                 MessageBox.Show("Sửa thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -217,7 +219,7 @@ namespace QuanLyThuVien_Nhom7
             //cbbMaLoaiSach.Enabled = false;
             cbbMaNXB.Enabled = false;
             cbbMaTacGia.Enabled = false;
-            //cbbMaViTri.Enabled = false;
+            cbbMaViTri.Enabled = false;
             txtGia.Enabled = false;
             dgvDauSach.Enabled = true;
         }
@@ -272,9 +274,9 @@ namespace QuanLyThuVien_Nhom7
             DataTable data3 = new DataTable();
             cm.Connection = con;
 
-            cm.CommandText = "select * from LOAISACH";
-            da.SelectCommand = cm;
-            da.Fill(data);
+            //cm.CommandText = "select * from LOAISACH";
+            //da.SelectCommand = cm;
+            //da.Fill(data);
             //cbbMaLoaiSach.DataSource = data;
             //cbbMaLoaiSach.DisplayMember = "Ten";
             //cbbMaLoaiSach.ValueMember = "Ma";
@@ -302,9 +304,9 @@ namespace QuanLyThuVien_Nhom7
             cm.CommandText = "select * from VITRI";
             da.SelectCommand = cm;
             da.Fill(data3);
-            //cbbMaViTri.DataSource = data3;
-            //cbbMaViTri.DisplayMember = "Ten";
-            //cbbMaViTri.ValueMember = "Ma";
+            cbbMaViTri.DataSource = data3;
+            cbbMaViTri.DisplayMember = "Ten";
+            cbbMaViTri.ValueMember = "Ma";
 
 
 
@@ -335,7 +337,7 @@ namespace QuanLyThuVien_Nhom7
             //cbbMaLoaiSach.Enabled = false;
             cbbMaNXB.Enabled = false;
             cbbMaTacGia.Enabled = false;
-            //cbbMaViTri.Enabled = false;
+            cbbMaViTri.Enabled = false;
             txtGia.Enabled = false;
             dgvDauSach.Enabled = true;
         }
@@ -348,6 +350,21 @@ namespace QuanLyThuVien_Nhom7
             f.ten = txtTen.Text;
             Hide();
             f.ShowDialog();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSoLuong_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
