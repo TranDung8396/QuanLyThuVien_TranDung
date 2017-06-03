@@ -26,7 +26,17 @@ namespace QuanLyThuVien_Nhom7
         }
         public void getdata()
         {
-            
+            SqlConnection con = new SqlConnection(globalParameter.str);
+            SqlCommand cm = new SqlCommand();
+            SqlDataAdapter da = new SqlDataAdapter();
+            DataTable data = new DataTable();
+            cm.Connection = con;
+            cm.CommandText = "select * from DOCGIA";
+            da.SelectCommand = cm;
+            da.Fill(data);
+            cmbDocGia.DataSource = data;
+            cmbDocGia.DisplayMember = "MaHienThi";
+            cmbDocGia.ValueMember = "MaThe";
         }
 
         private void btnXem_Click(object sender, EventArgs e)
