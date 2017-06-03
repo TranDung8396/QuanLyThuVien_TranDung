@@ -64,3 +64,9 @@ C:\Users\Phong_Tung\Documents\GitHub\QuanLyThuVien_TranDung\QuanLyThuVien22\Quan
 F:\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\bin\Debug\QuanLyThuVien_Nhom7.exe.config
 F:\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.exe
 F:\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.pdb
+D:\ThucTapNhom2222\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\bin\Debug\QuanLyThuVien_Nhom7.exe.config
+D:\ThucTapNhom2222\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.exe
+D:\ThucTapNhom2222\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.pdb
+C:\Users\Hiep\Documents\GitHub\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\bin\Debug\QuanLyThuVien_Nhom7.exe.config
+C:\Users\Hiep\Documents\GitHub\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.exe
+C:\Users\Hiep\Documents\GitHub\QuanLyThuVien_TranDung\QuanLyThuVien22\QuanLyThuVien\QuanLyThuVien_Nhom7\obj\Debug\QuanLyThuVien_Nhom7.pdb
