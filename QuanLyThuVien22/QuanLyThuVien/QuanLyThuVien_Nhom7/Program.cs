@@ -16,7 +16,7 @@ namespace QuanLyThuVien_Nhom7
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormThemDauSach());
+            Application.Run(new FormTimDocGia_MuonTra());
         }
     }
 }
