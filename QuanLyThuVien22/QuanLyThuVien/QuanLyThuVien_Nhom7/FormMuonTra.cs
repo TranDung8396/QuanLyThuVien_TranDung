@@ -75,14 +75,14 @@ namespace QuanLyThuVien_Nhom7
             cl.HeaderText = "Tên Sách";
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
-            cl.DataPropertyName = "Soluongthucte";
+            cl.DataPropertyName = "Soluong";
             cl.HeaderText = "Số lượng còn lại";
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
-            cl.DataPropertyName = "TheLoai";
-            cl.HeaderText = "Thể Loại";
-            dgv.Columns.Add(cl);
-            cl = new DataGridViewTextBoxColumn();
+            //cl.DataPropertyName = "TheLoai";
+            //cl.HeaderText = "Thể Loại";
+            //dgv.Columns.Add(cl);
+            //cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "Tacgia";
             cl.HeaderText = "Tác giả";
             dgv.Columns.Add(cl);
@@ -179,7 +179,7 @@ namespace QuanLyThuVien_Nhom7
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.Add(new SqlParameter("@mahienthi", txtSach.Text));
             command.Parameters.Add(new SqlParameter("@ten", txtSach.Text));
-            command.Parameters.Add(new SqlParameter("@theloai", txtSach.Text));
+            command.Parameters.Add(new SqlParameter("@soluong", txtSach.Text));
             command.Parameters.Add(new SqlParameter("@tacgia", txtSach.Text));
             command.Parameters.Add(new SqlParameter("@nxb", txtSach.Text));
             da.SelectCommand = command;
@@ -226,7 +226,7 @@ namespace QuanLyThuVien_Nhom7
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Đã mượn gì đâu mà trả");
+                    MessageBox.Show("Bạn chưa mượn nên không thể trả sách !");
                     return;
                 }
             }
@@ -287,7 +287,7 @@ namespace QuanLyThuVien_Nhom7
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi gì đó");
+                    MessageBox.Show("Lỗi");
                     return;
                 }
             }
