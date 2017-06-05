@@ -75,7 +75,7 @@
             // cbbMaViTri
             // 
             this.cbbMaViTri.FormattingEnabled = true;
-            this.cbbMaViTri.Location = new System.Drawing.Point(575, 305);
+            this.cbbMaViTri.Location = new System.Drawing.Point(573, 299);
             this.cbbMaViTri.Name = "cbbMaViTri";
             this.cbbMaViTri.Size = new System.Drawing.Size(221, 23);
             this.cbbMaViTri.TabIndex = 47;
@@ -93,7 +93,7 @@
             // cbbMaNXB
             // 
             this.cbbMaNXB.FormattingEnabled = true;
-            this.cbbMaNXB.Location = new System.Drawing.Point(575, 264);
+            this.cbbMaNXB.Location = new System.Drawing.Point(573, 244);
             this.cbbMaNXB.Name = "cbbMaNXB";
             this.cbbMaNXB.Size = new System.Drawing.Size(221, 23);
             this.cbbMaNXB.TabIndex = 46;
@@ -112,7 +112,7 @@
             // cbbMaTacGia
             // 
             this.cbbMaTacGia.FormattingEnabled = true;
-            this.cbbMaTacGia.Location = new System.Drawing.Point(575, 221);
+            this.cbbMaTacGia.Location = new System.Drawing.Point(573, 196);
             this.cbbMaTacGia.Name = "cbbMaTacGia";
             this.cbbMaTacGia.Size = new System.Drawing.Size(221, 23);
             this.cbbMaTacGia.TabIndex = 45;
@@ -128,7 +128,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(488, 223);
+            this.label8.Location = new System.Drawing.Point(486, 198);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 15);
             this.label8.TabIndex = 31;
@@ -213,7 +213,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(498, 305);
+            this.label11.Location = new System.Drawing.Point(496, 299);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(35, 15);
             this.label11.TabIndex = 34;
@@ -243,7 +243,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(477, 267);
+            this.label12.Location = new System.Drawing.Point(475, 247);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 15);
             this.label12.TabIndex = 35;

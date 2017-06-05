@@ -582,6 +582,7 @@
             this.dataGThemMuon.Size = new System.Drawing.Size(636, 155);
             this.dataGThemMuon.TabIndex = 0;
             this.dataGThemMuon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGThemMuon_CellClick);
+            this.dataGThemMuon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGThemMuon_CellContentClick);
             this.dataGThemMuon.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGThemMuon_CellDoubleClick);
             // 
             // FormMuonTra
