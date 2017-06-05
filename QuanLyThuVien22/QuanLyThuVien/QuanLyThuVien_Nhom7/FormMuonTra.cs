@@ -448,5 +448,10 @@ namespace QuanLyThuVien_Nhom7
                 }
             }
         }
+
+        private void dataGThemMuon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
